@@ -21,6 +21,11 @@ CURRENT_YEAR = date.today().year                                   #created whil
 PREPROCSSING_OBJECT_FILE_NAME = "preprocessing.pkl"                #created while writing data validation code
 SCHEMA_FILE_PATH = os.path.join("config", "schema.yaml")           #created while writing data validation code    
 
+AWS_ACCESS_KEY_ID_ENV_KEY = "AWS_ACCESS_KEY_ID"                    #evaluation and pushing model
+AWS_SECRET_ACCESS_KEY_ENV_KEY = "AWS_SECRET_ACCESS_KEY"            #evaluation and pushing model
+REGION_NAME = "us-east-1"                                          #evaluation and pushing model
+
+
 
 """
 Data Ingestion related constant start with DATA_INGESTION VAR NAME
@@ -55,3 +60,10 @@ MODEL_TRAINER_TRAINED_MODEL_DIR: str = "trained_model"
 MODEL_TRAINER_TRAINED_MODEL_NAME: str = "model.pkl"
 MODEL_TRAINER_EXPECTED_SCORE: float = 0.6
 MODEL_TRAINER_MODEL_CONFIG_FILE_PATH: str = os.path.join("config", "model.yaml")
+
+"""
+MODEL EVALUATION related constant 
+"""
+MODEL_EVALUATION_CHANGED_THRESHOLD_SCORE: float = 0.02
+MODEL_BUCKET_NAME = "usvisa-model2025"
+MODEL_PUSHER_S3_KEY = "model-registry"
