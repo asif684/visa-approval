@@ -9,6 +9,16 @@ visa approval mlops production ready project
 - MongoDB: https://account.mongodb.com/account/login
 - Data link: https://www.kaggle.com/datasets/moro23/easyvisa-dataset
 
+## 1. Problem statement.
+- OFLC gives job certification applications for employers seeking to bring foreign workers into the United States and grants certifications.
+- As In last year the count of employees were huge so OFLC needs Machine learning models to shortlist visa applicants based on their previous data.
+`In this project we are going to use the data given to build a Classification model:`
+- This model is to check if Visa get approved or not based on the given dataset.
+- This can be used to Recommend a suitable profile for the applicants for whom the visa should be certified or denied based on the certain criteria which influences the decision.
+
+## My goal :
+The goal of this project is to build a production-grade MLOps pipeline covering the entire lifecycle: data ingestion, data validation, model training, model evaluation, and model deployment (model pusher). The dataset was streamed via Kafka into MongoDB, enabling efficient data ingestion. For data validation and monitoring, I integrated Evidently AI to detect data drift. The pipeline was containerized with Docker, orchestrated with CI/CD workflows using GitHub Actions, and deployed on AWS. FastAPI was used to serve the model, ensuring a scalable, reliable, and production-ready system.
+
 ## Git Commands
 
 ```bash
