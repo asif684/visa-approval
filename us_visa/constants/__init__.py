@@ -23,7 +23,7 @@ SCHEMA_FILE_PATH = os.path.join("config", "schema.yaml")           #created whil
 
 AWS_ACCESS_KEY_ID_ENV_KEY = "AWS_ACCESS_KEY_ID"                    #evaluation and pushing model
 AWS_SECRET_ACCESS_KEY_ENV_KEY = "AWS_SECRET_ACCESS_KEY"            #evaluation and pushing model
-REGION_NAME = "us-east-1"                                          #evaluation and pushing model
+REGION_NAME = "eu-north-1"                                          #evaluation and pushing model
 
 
 
@@ -65,7 +65,7 @@ MODEL_TRAINER_MODEL_CONFIG_FILE_PATH: str = os.path.join("config", "model.yaml")
 MODEL EVALUATION related constant 
 """
 MODEL_EVALUATION_CHANGED_THRESHOLD_SCORE: float = 0.02
-MODEL_BUCKET_NAME = "usvisa-model2025"
+MODEL_BUCKET_NAME = "usvisa-model2025-asif"
 MODEL_PUSHER_S3_KEY = "model-registry"
 
 APP_HOST = "0.0.0.0"
